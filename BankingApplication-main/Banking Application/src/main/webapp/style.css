@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Outfit", sans-serif;
+}
+
+/* AdminDashboard */
+body {
+	
+	/* background-color: #74EBD5; */
+	background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+	
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 1s ease-in;
+	
+
+}
+
+.main-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0.5rem 3rem;
+}
+
+h1 {
+	text-align: center;
+	color: #1a1313;
+}
+
+.inner {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.2rem;
+	border-radius: 20px;
+	background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.left {
+	flex: 0.5;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	padding: 1rem;
+}
+
+.left img {
+	width: 700px;
+	height: auto;
+	object-fit: center;
+	border-radius: 16px;
+	animation: left 1s ;
+	transition: 5s ease-in-out;
+	
+}
+.right {
+	flex: 0.5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	gap: 3rem;
+	
+}
+
+.right p {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #333;
+}
+
+.right .btns {
+	display: flex;
+	justify-content: start;
+	align-items:center;
+	gap: 2rem;
+	width: 100%;
+	
+}
+
+.right a {
+	display: block;
+	padding: 12px 20px;
+	margin: 10px 0;
+	font-size: 1.2rem;
+	background: rgba(77, 161, 218, 0.568);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	text-align: center;
+	transition: background-color 0.3s ease;
+	border: 1px solid;
+}
+
+.right a:hover {
+	background-color: #3898ff;
+	transform: scale(1.1);
+	transition: 0.3s;
+	
+}
+
+  
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes left {
+	0%{
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	
+	100%{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+@media (max-width:789px) {
+	body{
+		background: #ffffff;
+	}
+	
+}
+

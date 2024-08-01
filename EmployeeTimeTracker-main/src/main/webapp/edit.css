@@ -1,0 +1,66 @@
+body {
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: rgb(240, 188, 91);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+input, select {
+	padding: 12px;
+	outline: none;
+	border: navy;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	border-radius: 20px;
+}
+
+h1 {
+	margin: 20px auto;
+	color: #2b2d44;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	margin: 20px 0;
+	display: inline-block;
+	color: rgb(83, 55, 55);
+	font-weight: 600;
+	font-size: 1.5rem;
+	text-align: start;
+}
+
+a:hover {
+	transform: scale(1);
+	transition: 0.3s;
+	color: #1e1064;
+}
+
+h2 {
+	text-align: center;
+}
+
+.update {
+	cursor: pointer;
+}
+
+.update:hover {
+	background: rgb(64, 245, 64);
+	color: rgb(255, 255, 255);
+}

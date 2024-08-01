@@ -1,0 +1,27 @@
+form {
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	width: 30%;
+	margin: 20px auto;
+	gap: 20px;
+}
+
+form input, form	select {
+	padding: 10px;
+	outline: none;
+	background: transparent;
+	border: 2px solid #fff5ee;
+	color: #ffffff;
+	font-size: 1.1rem;
+}
+
+select option {
+	background-color: #f4998d;
+}
+
+body {
+	background: #f4998d;
+	width: 100%;
+	overflow: hidden;
+}
